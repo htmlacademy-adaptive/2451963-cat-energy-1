@@ -3,7 +3,7 @@
 * Студент: [Maksim Korsun](https://up.htmlacademy.ru/adaptive-individual/1/user/2451963).
 * Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037).
 
----
+-~-
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
 
