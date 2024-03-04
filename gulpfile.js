@@ -4,6 +4,33 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import imagemin from 'gulp-imagemin';
+import htmlmin from 'gulp-htmlmin';
+import uglify from 'gulp-uglify';
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/**/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
+}
+
+// Minify HTML
+
+const minifyHTML = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
+
+// Optimize Images
+
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/img'));
+}
 
 // Styles
 
@@ -39,7 +66,12 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+// Build
+
+const build = gulp.series(gulp.parallel(styles, optimizeImages, minifyHTML, scripts));
 
 export default gulp.series(
-  styles, server, watcher
+  build,
+  server,
+  watcher
 );
