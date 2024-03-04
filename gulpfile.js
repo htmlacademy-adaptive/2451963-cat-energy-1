@@ -66,7 +66,7 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-// Build
+//Build
 
 const build = gulp.series(gulp.parallel(styles, optimizeImages, minifyHTML, scripts));
 
