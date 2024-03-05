@@ -1,0 +1,29 @@
+.hero {
+  background-color: $accent-green;
+  background-image: url("../../img/hero_bg_image.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $bg-color;
+}
+
+.hero__wrapper {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero__subtext {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}

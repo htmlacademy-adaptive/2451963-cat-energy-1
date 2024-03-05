@@ -1,0 +1,29 @@
+.example {
+  background-color: $light-grey;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+}
+
+.example__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 400;
+  color: $black;
+}
+
+.example__result {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+}
+
