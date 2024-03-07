@@ -1,3 +1,11 @@
+.location {
+  background-color: $bg-color;
+
+  &--contrast {
+    background-color: $light-grey;
+  }
+}
+
 .location__wrapper {
   padding: 26px 20px;
 }

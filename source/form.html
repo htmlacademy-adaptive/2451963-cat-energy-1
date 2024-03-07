@@ -36,113 +36,115 @@
       </div>
     </header>
     <main class="main-form main-container">
-      <h1 class="main-form__title">Подбор программы</h1>
-      <p class="main-form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="main-form__info info-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="info-form__group group-general">
-          <legend class="visually-hidden">Общая информация о питомце.</legend>
-          <ul class="group-general__list control-list">
-            <li class="control-list__item">
-              <label class="control-list__label" for="name">
-                <input class="control-list__input" id="name" type="text" name="name" placeholder="Барсик" required>
-                <span class="control-list__text">Имя:*</span>
-              </label>
-            </li>
-            <li class="control-list__item">
-              <label class="control-list__label" for="weight">
-                <input class="control-list__input" id="weight" type="number" name="weight" placeholder="7" required>
-                <span class="control-list__text">Вес (кг):*</span>
-              </label>
-            </li>
-            <li class="control-list__item">
-              <label class="control-list__label" for="years">
-                <input class="control-list__input" id="years" type="number" name="years" placeholder="7">
-                <span class="control-list__text">Возраст (лет):</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="info-form__group group-radio">
-          <legend class="visually-hidden">Для чего.</legend>
-          <ul class="group-radio__list control-list">
-            <li class="control-list__item">
-              <label class="control-list__label" for="weight-loss">
-                <input class="control-list__input" id="weight-loss" type="radio" name="type-food" value="weight-loss" checked>
-                <span class="control-list__text">Похудение</span>
-              </label>
-            </li>
-            <li class="control-list__item">
-              <label class="control-list__label" for="weight-bulk">
-                <input class="control-list__input" id="weight-bulk" type="radio" name="type-food" value="weight-bulk">
-                <span class="control-list__text">Набор массы</span>
-              </label>
-            </li>
-            <li class="control-list__item">
-              <label class="control-list__label" for="weight-advice">
-                <input class="control-list__input" id="weight-advice" type="radio" name="type-food" value="weight-advice">
-                <span class="control-list__text">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="info-form__group group-contacts">
-          <legend class="group-contacts__title">Контактные данные (владельца кота)</legend>
-          <ul class="group-contacts__list control-list">
-            <li class="control-list__item">
-              <label class="control-list__label" for="email">
-                <input class="control-list__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-                <span class="control-list__text">E-mail:*</span>
-              </label>
-            </li>
-            <li class="control-list__item">
-              <label class="control-list__label" for="telephone">
-                <input class="control-list__input" id="telephone" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required>
-                <span class="control-list__text">Телефон:*</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="info-form__group group-comment">
-          <legend class="group-contacts__title">Комментарий</legend>
-          <label class="control-list__label" for="comment">
-            <textarea class="control-list__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-            <span class="visually-hidden">Введите комментарий.</span>
-          </label>
-        </fieldset>
-        <fieldset class="info-form__group group-additionally">
-          <legend class="group-contacts__title">Инфраструктура:</legend>
-            <ul class="group-additionally__list control-list">
+      <div class="main-form__wrapper">
+        <h1 class="main-form__title">Подбор программы</h1>
+        <p class="main-form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="main-form__info info-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="info-form__group group-general">
+            <legend class="visually-hidden">Общая информация о питомце.</legend>
+            <ul class="group-general__list control-list">
               <li class="control-list__item">
-                <label class="control-list__label" for="sweetener">
-                  <input class="control-list__input" id="sweetener" type="checkbox" name="sweetener" checked>
-                  <span class="control-list__text">Сахарозаменитель</span>
+                <label class="control-list__label" for="name">
+                  <input class="control-list__input" id="name" type="text" name="name" placeholder="Барсик" required>
+                  <span class="control-list__text">Имя:*</span>
                 </label>
               </li>
               <li class="control-list__item">
-                <label class="control-list__label" for="water">
-                  <input class="control-list__input" id="water" type="checkbox" name="water">
-                  <span class="control-list__text">Питьевая вода</span>
+                <label class="control-list__label" for="weight">
+                  <input class="control-list__input" id="weight" type="number" name="weight" placeholder="7" required>
+                  <span class="control-list__text">Вес (кг):*</span>
                 </label>
               </li>
               <li class="control-list__item">
-                <label class="control-list__label" for="milk">
-                  <input class="control-list__input" id="milk" type="checkbox" name="milk">
-                  <span class="control-list__text">Молоко</span>
-                </label>
-              </li>
-              <li class="control-list__item">
-                <label class="control-list__label" for="vitamins">
-                  <input class="control-list__input" id="vitamins" type="checkbox" name="vitamins">
-                  <span class="control-list__text">Витамины</span>
+                <label class="control-list__label" for="years">
+                  <input class="control-list__input" id="years" type="number" name="years" placeholder="7">
+                  <span class="control-list__text">Возраст (лет):</span>
                 </label>
               </li>
             </ul>
-        </fieldset>
-        <button class="info-form__button button button--action" type="submit">Отправить заявку</button>
-        <p class="info-form__legend">* — Обязательные поля</p>
-      </form>
+          </fieldset>
+          <fieldset class="info-form__group group-radio">
+            <legend class="visually-hidden">Для чего.</legend>
+            <ul class="group-radio__list control-list">
+              <li class="control-list__item">
+                <label class="control-list__label" for="weight-loss">
+                  <input class="control-list__input" id="weight-loss" type="radio" name="type-food" value="weight-loss" checked>
+                  <span class="control-list__text">Похудение</span>
+                </label>
+              </li>
+              <li class="control-list__item">
+                <label class="control-list__label" for="weight-bulk">
+                  <input class="control-list__input" id="weight-bulk" type="radio" name="type-food" value="weight-bulk">
+                  <span class="control-list__text">Набор массы</span>
+                </label>
+              </li>
+              <li class="control-list__item">
+                <label class="control-list__label" for="weight-advice">
+                  <input class="control-list__input" id="weight-advice" type="radio" name="type-food" value="weight-advice">
+                  <span class="control-list__text">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="info-form__group group-contacts">
+            <legend class="group-contacts__title">Контактные данные (владельца кота)</legend>
+            <ul class="group-contacts__list control-list">
+              <li class="control-list__item">
+                <label class="control-list__label" for="email">
+                  <input class="control-list__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <span class="control-list__text">E-mail:*</span>
+                </label>
+              </li>
+              <li class="control-list__item">
+                <label class="control-list__label" for="telephone">
+                  <input class="control-list__input" id="telephone" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required>
+                  <span class="control-list__text">Телефон:*</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="info-form__group group-comment">
+            <legend class="group-contacts__title">Комментарий</legend>
+            <label class="control-list__label" for="comment">
+              <textarea class="control-list__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <span class="visually-hidden">Введите комментарий.</span>
+            </label>
+          </fieldset>
+          <fieldset class="info-form__group group-additionally">
+            <legend class="group-contacts__title">Дополнительно:</legend>
+              <ul class="group-additionally__list control-list">
+                <li class="control-list__item">
+                  <label class="control-list__label" for="sweetener">
+                    <input class="control-list__input" id="sweetener" type="checkbox" name="sweetener" checked>
+                    <span class="control-list__text">Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="control-list__item">
+                  <label class="control-list__label" for="water">
+                    <input class="control-list__input" id="water" type="checkbox" name="water">
+                    <span class="control-list__text">Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="control-list__item">
+                  <label class="control-list__label" for="milk">
+                    <input class="control-list__input" id="milk" type="checkbox" name="milk">
+                    <span class="control-list__text">Молоко</span>
+                  </label>
+                </li>
+                <li class="control-list__item">
+                  <label class="control-list__label" for="vitamins">
+                    <input class="control-list__input" id="vitamins" type="checkbox" name="vitamins">
+                    <span class="control-list__text">Витамины</span>
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+          <button class="info-form__button button button--action" type="submit">Отправить заявку</button>
+          <p class="info-form__legend">* — Обязательные поля</p>
+        </form>
+      </div>
 
-      <section class="location">
+      <section class="location location--contrast">
         <h2 class="visually-hidden">Местоположение.</h2>
         <div class="location__wrapper">
           <div class="location__block block-address">
