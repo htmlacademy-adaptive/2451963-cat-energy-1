@@ -1,8 +1,5 @@
 .hero {
-  background-color: $accent-green;
-  background-image: url("../../img/hero_bg_image.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: $accent-green url("../../img/hero_bg_image.jpg") no-repeat center top;
   color: $bg-color;
 }
 

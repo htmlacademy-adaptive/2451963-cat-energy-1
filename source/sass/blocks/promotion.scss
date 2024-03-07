@@ -1,5 +1,4 @@
 .promotion__wrapper {
-  background-color: $accent-green;
-  background-image: url("../../img/promotion_bg_image.jpg");
+  background: $accent-green url("../../img/promotion_bg_image.jpg") no-repeat center;
   margin: 0 20px;
 }
