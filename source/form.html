@@ -36,7 +36,7 @@
     <main class="main-form main-container">
       <div class="main-form__wrapper">
         <h1 class="main-form__title">Подбор программы</h1>
-        <p class="main-form__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="main-form__intro-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="main-form__info info-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="info-form__group group-general">
             <legend class="visually-hidden">Общая информация о питомце.</legend>
@@ -85,7 +85,7 @@
             </ul>
           </fieldset>
           <fieldset class="info-form__group group-contacts">
-            <legend class="group-contacts__title">Контактные данные (владельца кота)</legend>
+            <legend class="info-form__subtitle">Контактные данные (владельца кота)</legend>
             <ul class="group-contacts__list control-list">
               <li class="control-list__item">
                 <label class="control-list__label" for="email">
@@ -102,14 +102,14 @@
             </ul>
           </fieldset>
           <fieldset class="info-form__group group-comment">
-            <legend class="group-contacts__title">Комментарий</legend>
+            <legend class="info-form__subtitle">Комментарий</legend>
             <label class="control-list__label" for="comment">
               <textarea class="control-list__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               <span class="visually-hidden">Введите комментарий.</span>
             </label>
           </fieldset>
           <fieldset class="info-form__group group-additionally">
-            <legend class="group-contacts__title">Дополнительно:</legend>
+            <legend class="info-form__subtitle">Дополнительно:</legend>
               <ul class="group-additionally__list control-list">
                 <li class="control-list__item">
                   <label class="control-list__label" for="sweetener">
@@ -137,8 +137,8 @@
                 </li>
               </ul>
           </fieldset>
-          <button class="info-form__button button button--action" type="submit">Отправить заявку</button>
-          <p class="info-form__legend">* — Обязательные поля</p>
+          <button class="main-form__button button button--action" type="submit">Отправить заявку</button>
+          <p class="main-form__legend">* — Обязательные поля</p>
         </form>
       </div>
       <section class="location location--contrast">

@@ -1,4 +1,11 @@
 .promotion__wrapper {
   background: $accent-green url("../../img/promotion_bg_image.jpg") no-repeat center;
   margin: 0 20px;
+  padding: 59px 61px 43px;
+}
+
+.promotion__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $bg-color;
 }

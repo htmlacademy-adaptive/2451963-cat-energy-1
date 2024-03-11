@@ -5,3 +5,26 @@
 .additionally__wrapper {
   padding: 0 20px;
 }
+
+.additionally__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black;
+}
+
+.additionally__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $light-black;
+  text-transform: uppercase;
+}
+
+.additionally__quantity,
+.additionally__price {
+  font-size: 14px;
+  line-height: 14px;
+}
