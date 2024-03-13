@@ -4,53 +4,57 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
-import imagemin from 'gulp-imagemin';
 import htmlmin from 'gulp-htmlmin';
-import uglify from 'gulp-uglify';
+import imagemin from 'gulp-imagemin';
 
-// Scripts
-
-const scripts = () => {
-  return gulp.src('source/js/**/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('build/js'));
-}
+const { src, dest, watch, series } = gulp;
+const { stream, init, reload } = browser;
 
 // Minify HTML
 
 const minifyHTML = () => {
-  return gulp.src('source/*.html')
+  return src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
-}
-
-// Optimize Images
-
-const optimizeImages = () => {
-  return gulp.src('source/img/**/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('build/img'));
+    .pipe(dest('build'));
 }
 
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
+  return src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
+    .pipe(dest('build/css', { sourcemaps: '.' }))
+    .pipe(stream());
+}
+
+// Optimize images
+
+const optimizeImages = () => {
+  return src('source/img/**/*')
+    .pipe(imagemin())
+    .pipe(dest('build/img'));
+}
+
+// Fonts
+
+const fonts = () => {
+  return src([
+    'source/fonts/**/*.woff',
+    'source/fonts/**/*.woff2'
+  ])
+    .pipe(dest('build/fonts'));
 }
 
 // Server
 
 const server = (done) => {
-  browser.init({
+  init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -62,15 +66,15 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  watch('source/sass/**/*.scss', series(styles));
+  watch('source/*.html').on('change', series(minifyHTML, reload));
 }
 
-//Build
+// Build
 
-const build = gulp.series(gulp.parallel(styles, optimizeImages, minifyHTML, scripts));
+const build = series(styles, minifyHTML, optimizeImages, fonts)
 
-export default gulp.series(
+export default series(
   build,
   server,
   watcher
