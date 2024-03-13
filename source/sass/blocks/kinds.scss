@@ -1,0 +1,27 @@
+.kinds__wrapper {
+  padding: 0 20px;
+}
+
+.kinds__list {
+  @include list-reset;
+}
+
+.kinds__item {
+  background-color: $light-grey;
+  padding: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.kinds__title {
+  @include font-oswald(24px, 37px);
+  text-transform: uppercase;
+}
+
+.kinds__link {
+  @include font-oswald(16px, 16px);
+  text-transform: uppercase;
+  text-decoration: none;
+}

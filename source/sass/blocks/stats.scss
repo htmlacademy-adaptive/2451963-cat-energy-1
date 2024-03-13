@@ -1,0 +1,9 @@
+.stats__termin {
+  @include font-options(12px, 12px);
+  text-transform: lowercase;
+}
+
+.stats__value {
+  @include font-oswald(24px, 24px);
+  text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+.button {
+  @include font-oswald(16px, 20px, $black);
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--action {
+    background-color: $accent-green;
+    color: $bg-color;
+  }
+
+  &--more {
+    background-color: $light-grey;
+    color: $accent-grey;
+  }
+}

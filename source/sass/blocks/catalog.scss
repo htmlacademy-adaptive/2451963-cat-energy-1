@@ -1,0 +1,11 @@
+.catalog__wrapper {
+  padding: 0 20px;
+}
+
+.catalog__title {
+  @include font-oswald(36px, 36px);
+}
+
+.catalog__list {
+  @include list-reset;
+}

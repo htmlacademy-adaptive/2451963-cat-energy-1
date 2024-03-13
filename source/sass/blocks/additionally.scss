@@ -1,0 +1,25 @@
+.additionally {
+  margin: 26px 0 35px 0;
+}
+
+.additionally__wrapper {
+  padding: 0 20px;
+}
+
+.additionally__title {
+  @include font-oswald(24px, 24px);
+}
+
+.additionally__list {
+  @include list-reset;
+}
+
+.additionally__name {
+  @include font-oswald(16px, 16px, $light-black);
+  text-transform: uppercase;
+}
+
+.additionally__quantity,
+.additionally__price {
+  @include font-options(14px, 14px);
+}

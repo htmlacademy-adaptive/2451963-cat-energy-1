@@ -1,0 +1,18 @@
+.example {
+  background-color: $bg-example;
+}
+
+.example__wrapper {
+  padding: 0 20px;
+}
+
+.example__title {
+  @include font-oswald(36px, 40px);
+  margin: 0;
+}
+
+.example__result {
+  @include font-oswald(14px, 20px);
+  margin: 0;
+  text-transform: uppercase;
+}

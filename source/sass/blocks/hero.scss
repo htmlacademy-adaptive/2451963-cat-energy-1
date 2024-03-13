@@ -1,0 +1,18 @@
+.hero {
+  background: $accent-green url("../../img/hero_bg_image.jpg") no-repeat center top;
+  color: $bg-color;
+}
+
+.hero__wrapper {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  @include font-oswald(36px, 36px, inherit);
+}
+
+.hero__subtext {
+  @include font-oswald(14px, 14px, inherit);
+  text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+.about__wrapper {
+  padding: 0 20px;
+}
+
+.about__title {
+  @include font-oswald(36px, 40px);
+  margin: 0;
+}

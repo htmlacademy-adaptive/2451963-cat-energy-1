@@ -1,0 +1,18 @@
+@mixin font-options($font-size, $line-height, $color: $accent-grey) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin font-oswald($font-size, $line-height, $color: $black) {
+  @include font-options($font-size, $line-height, $color);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

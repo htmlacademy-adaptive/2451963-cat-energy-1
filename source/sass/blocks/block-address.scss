@@ -1,0 +1,9 @@
+.block-address__text {
+  @include font-oswald(16px, 20px, $pre-black);
+  text-transform: uppercase;
+}
+
+.block-address__point {
+  @include font-options(14px, 20px);
+  font-style: normal;
+}

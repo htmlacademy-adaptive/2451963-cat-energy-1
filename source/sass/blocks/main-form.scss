@@ -1,0 +1,22 @@
+.main-form__wrapper {
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+
+.main-form__title {
+  @include font-oswald(36px, 36px);
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.main-form__intro-text {
+  @include font-oswald(14px, 18px);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.main-form__legend {
+  line-height: 16px;
+  color: $black;
+  margin: 0;
+}
