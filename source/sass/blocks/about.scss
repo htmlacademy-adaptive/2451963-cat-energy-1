@@ -3,11 +3,6 @@
 }
 
 .about__title {
+  @include font-oswald(36px, 40px);
   margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
-  font-style: normal;
-  font-weight: 400;
-  color: $black;
 }

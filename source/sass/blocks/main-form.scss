@@ -4,20 +4,13 @@
 }
 
 .main-form__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $black;
+  @include font-oswald(36px, 36px);
   margin: 0;
   margin-bottom: 37px;
 }
 
 .main-form__intro-text {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: $black;
+  @include font-oswald(14px, 18px);
   text-transform: uppercase;
   margin: 0;
 }

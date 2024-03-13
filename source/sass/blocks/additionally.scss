@@ -7,24 +7,19 @@
 }
 
 .additionally__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $black;
+  @include font-oswald(24px, 24px);
+}
+
+.additionally__list {
+  @include list-reset;
 }
 
 .additionally__name {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: $light-black;
+  @include font-oswald(16px, 16px, $light-black);
   text-transform: uppercase;
 }
 
 .additionally__quantity,
 .additionally__price {
-  font-size: 14px;
-  line-height: 14px;
+  @include font-options(14px, 14px);
 }

@@ -1,11 +1,13 @@
+.control-list {
+  @include list-reset;
+}
+
 .control-list__label {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: $accent-grey;
+  @include font-oswald(16px, 18px, $accent-grey);
   text-transform: uppercase;
 }
 
 .control-list__input {
+  @include font-oswald(16px, 18px, $accent-grey);
   text-transform: uppercase;
 }

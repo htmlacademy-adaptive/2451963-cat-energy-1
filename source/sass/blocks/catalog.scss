@@ -3,9 +3,9 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $black;
+  @include font-oswald(36px, 36px);
+}
+
+.catalog__list {
+  @include list-reset;
 }

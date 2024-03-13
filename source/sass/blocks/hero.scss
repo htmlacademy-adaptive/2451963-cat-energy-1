@@ -9,18 +9,10 @@
 }
 
 .hero__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  font-style: normal;
+  @include font-oswald(36px, 36px, inherit);
 }
 
 .hero__subtext {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  font-style: normal;
+  @include font-oswald(14px, 14px, inherit);
   text-transform: uppercase;
 }

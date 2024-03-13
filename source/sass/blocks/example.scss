@@ -7,22 +7,12 @@
 }
 
 .example__title {
+  @include font-oswald(36px, 40px);
   margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
-  font-style: normal;
-  font-weight: 400;
-  color: $black;
 }
 
 .example__result {
+  @include font-oswald(14px, 20px);
   margin: 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-style: normal;
-  font-weight: 400;
-  color: $black;
   text-transform: uppercase;
 }

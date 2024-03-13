@@ -3,6 +3,7 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/variables.scss";
+@import "global/mixins.scss";
 
 // Blocks
 
@@ -29,3 +30,7 @@
 @import "blocks/card.scss";
 @import "blocks/control-list.scss";
 @import "blocks/info-form.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";

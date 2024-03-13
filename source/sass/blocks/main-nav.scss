@@ -1,0 +1,9 @@
+.main-nav__link {
+  @include font-oswald(20px, 20px);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav__list {
+  @include list-reset;
+}

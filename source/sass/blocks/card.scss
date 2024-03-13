@@ -1,13 +1,12 @@
 .card__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: $light-black;
+  @include font-oswald(16px, 20px, $light-black);
   text-transform: uppercase;
 }
 
 .card__info {
-  font-size: 12px;
-  line-height: 16px;
+  @include font-options(12px, 16px);
+}
+
+.card__link {
+  text-decoration: none;
 }
